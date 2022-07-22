@@ -1,8 +1,10 @@
 import 'package:clock_view/const.dart';
 import 'package:clock_view/homepage.dart';
+import 'package:clock_view/timer.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
+// ignore: must_be_immutable
 class Bottome extends StatefulWidget {
   int pageInxdex;
   Bottome({Key? key, required this.pageInxdex}) : super(key: key);
@@ -38,7 +40,8 @@ class _BottomeState extends State<Bottome> {
           ),
           InkWell(
             onTap: () {
-              setState(() {});
+              Navigator.of(context).pushReplacement(PageTransition(
+                  child: const TimerPage(), type: PageTransitionType.fade));
             },
             child: IconChanger(
                 icon: Icons.timer_outlined,
@@ -75,6 +78,7 @@ class _BottomeState extends State<Bottome> {
   }
 }
 
+// ignore: must_be_immutable
 class IconChanger extends StatelessWidget {
   bool isOn;
   IconData icon;

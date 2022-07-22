@@ -46,19 +46,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.grey[500]!,
                     spreadRadius: 1,
                     blurRadius: 5,
-                    offset: const Offset(2, 2)),
+                    offset: const Offset(4, 4)),
                 const BoxShadow(
                     color: Colors.white,
                     spreadRadius: 1,
                     blurRadius: 3,
-                    offset: Offset(-2, -2))
+                    offset: Offset(-4, -4))
               ],
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 const Text(
-                  "10:00",
+                  "8:00",
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 25,
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           SizedBox(
-            height: he * 0.05,
+            height: he * 0.04,
           ),
           Container(
             width: we * 0.84,
@@ -101,12 +101,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.grey[500]!,
                     spreadRadius: 1,
                     blurRadius: 5,
-                    offset: const Offset(2, 2)),
+                    offset: const Offset(4, 4)),
                 const BoxShadow(
                     color: Colors.white,
                     spreadRadius: 1,
                     blurRadius: 3,
-                    offset: Offset(-2, -2))
+                    offset: Offset(-4, -4))
               ],
             ),
             child: Row(
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: Colors.grey),
                 ),
                 SizedBox(
-                  width: we * 0.425,
+                  width: we * 0.4,
                 ),
                 FlutterSwitch(
                     value: status,

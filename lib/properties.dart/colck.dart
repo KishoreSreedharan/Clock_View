@@ -169,6 +169,7 @@ class ClockPainter extends CustomPainter {
     var houHandY = centerY +
         60 * sin((datetime.hour * 30 + datetime.minute * 0.5) * pi / 180);
 
+    // ignore: unused_local_variable
     var dashBrush = Paint()
       ..color = Colors.orange[500]!
       ..style = PaintingStyle.stroke
